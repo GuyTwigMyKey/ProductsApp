@@ -8,17 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		9D1E15192A646D7600AE25C7 /* ProductsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15182A646D7600AE25C7 /* ProductsAppApp.swift */; };
-		9D1E151B2A646D7600AE25C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E151A2A646D7600AE25C7 /* ContentView.swift */; };
+		9D1E151B2A646D7600AE25C7 /* ProductContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E151A2A646D7600AE25C7 /* ProductContentView.swift */; };
 		9D1E151D2A646D7800AE25C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1E151C2A646D7800AE25C7 /* Assets.xcassets */; };
 		9D1E15202A646D7800AE25C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D1E151F2A646D7800AE25C7 /* Preview Assets.xcassets */; };
+		9D1E152F2A646F6B00AE25C7 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E152E2A646F6B00AE25C7 /* ProductsVC.swift */; };
+		9D1E15312A646F9900AE25C7 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15302A646F9900AE25C7 /* ProductsView.swift */; };
+		9D1E15332A646FC100AE25C7 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15322A646FC100AE25C7 /* ProductRow.swift */; };
+		9D1E15352A64700A00AE25C7 /* ProductsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15342A64700A00AE25C7 /* ProductsModel.swift */; };
+		9D1E15372A64704D00AE25C7 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15362A64704D00AE25C7 /* ProductViewModel.swift */; };
+		9D1E15392A64709B00AE25C7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15382A64709B00AE25C7 /* NetworkManager.swift */; };
+		9D1E153B2A6470B300AE25C7 /* NetworkManagerErrorsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E153A2A6470B300AE25C7 /* NetworkManagerErrorsHandler.swift */; };
+		9D1E153D2A6470D600AE25C7 /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E153C2A6470D600AE25C7 /* NetworkBuilder.swift */; };
+		9D1E153F2A64711C00AE25C7 /* RemoteImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E153E2A64711C00AE25C7 /* RemoteImageUrl.swift */; };
+		9D1E15412A64873100AE25C7 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15402A64873100AE25C7 /* ProductDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D1E15152A646D7600AE25C7 /* ProductsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D1E15182A646D7600AE25C7 /* ProductsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAppApp.swift; sourceTree = "<group>"; };
-		9D1E151A2A646D7600AE25C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9D1E151A2A646D7600AE25C7 /* ProductContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductContentView.swift; sourceTree = "<group>"; };
 		9D1E151C2A646D7800AE25C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D1E151F2A646D7800AE25C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D1E152E2A646F6B00AE25C7 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
+		9D1E15302A646F9900AE25C7 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
+		9D1E15322A646FC100AE25C7 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
+		9D1E15342A64700A00AE25C7 /* ProductsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsModel.swift; sourceTree = "<group>"; };
+		9D1E15362A64704D00AE25C7 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		9D1E15382A64709B00AE25C7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9D1E153A2A6470B300AE25C7 /* NetworkManagerErrorsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerErrorsHandler.swift; sourceTree = "<group>"; };
+		9D1E153C2A6470D600AE25C7 /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
+		9D1E153E2A64711C00AE25C7 /* RemoteImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageUrl.swift; sourceTree = "<group>"; };
+		9D1E15402A64873100AE25C7 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +71,14 @@
 		9D1E15172A646D7600AE25C7 /* ProductsApp */ = {
 			isa = PBXGroup;
 			children = (
-				9D1E15182A646D7600AE25C7 /* ProductsAppApp.swift */,
-				9D1E151A2A646D7600AE25C7 /* ContentView.swift */,
+				9D1E15262A646E0900AE25C7 /* Main */,
+				9D1E152C2A646E8D00AE25C7 /* NetworkManager */,
+				9D1E152B2A646E8000AE25C7 /* NetworkBuilder */,
+				9D1E15282A646E4D00AE25C7 /* Views */,
+				9D1E15292A646E5E00AE25C7 /* ViewModels */,
+				9D1E152D2A646E9B00AE25C7 /* Models */,
+				9D1E15272A646E3B00AE25C7 /* ViewControllers */,
+				9D1E152A2A646E7700AE25C7 /* Utils */,
 				9D1E151C2A646D7800AE25C7 /* Assets.xcassets */,
 				9D1E151E2A646D7800AE25C7 /* Preview Content */,
 			);
@@ -65,6 +91,74 @@
 				9D1E151F2A646D7800AE25C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9D1E15262A646E0900AE25C7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E15182A646D7600AE25C7 /* ProductsAppApp.swift */,
+				9D1E151A2A646D7600AE25C7 /* ProductContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9D1E15272A646E3B00AE25C7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E152E2A646F6B00AE25C7 /* ProductsVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9D1E15282A646E4D00AE25C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E15302A646F9900AE25C7 /* ProductsView.swift */,
+				9D1E15322A646FC100AE25C7 /* ProductRow.swift */,
+				9D1E15402A64873100AE25C7 /* ProductDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9D1E15292A646E5E00AE25C7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E15362A64704D00AE25C7 /* ProductViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9D1E152A2A646E7700AE25C7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E153E2A64711C00AE25C7 /* RemoteImageUrl.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9D1E152B2A646E8000AE25C7 /* NetworkBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E153C2A6470D600AE25C7 /* NetworkBuilder.swift */,
+			);
+			path = NetworkBuilder;
+			sourceTree = "<group>";
+		};
+		9D1E152C2A646E8D00AE25C7 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E15382A64709B00AE25C7 /* NetworkManager.swift */,
+				9D1E153A2A6470B300AE25C7 /* NetworkManagerErrorsHandler.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		9D1E152D2A646E9B00AE25C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D1E15342A64700A00AE25C7 /* ProductsModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +231,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D1E151B2A646D7600AE25C7 /* ContentView.swift in Sources */,
+				9D1E15372A64704D00AE25C7 /* ProductViewModel.swift in Sources */,
+				9D1E15312A646F9900AE25C7 /* ProductsView.swift in Sources */,
+				9D1E15352A64700A00AE25C7 /* ProductsModel.swift in Sources */,
+				9D1E151B2A646D7600AE25C7 /* ProductContentView.swift in Sources */,
+				9D1E15392A64709B00AE25C7 /* NetworkManager.swift in Sources */,
+				9D1E15332A646FC100AE25C7 /* ProductRow.swift in Sources */,
 				9D1E15192A646D7600AE25C7 /* ProductsAppApp.swift in Sources */,
+				9D1E152F2A646F6B00AE25C7 /* ProductsVC.swift in Sources */,
+				9D1E153F2A64711C00AE25C7 /* RemoteImageUrl.swift in Sources */,
+				9D1E153D2A6470D600AE25C7 /* NetworkBuilder.swift in Sources */,
+				9D1E15412A64873100AE25C7 /* ProductDetails.swift in Sources */,
+				9D1E153B2A6470B300AE25C7 /* NetworkManagerErrorsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +384,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +414,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
