@@ -23,8 +23,10 @@ struct ProductsView: View {
                 Spacer()
                 
             }
-            .padding(.top, 10)
+            .padding(.top, 0)
+            .ignoresSafeArea()
         }
+        .ignoresSafeArea()
     }
 }
 

@@ -21,6 +21,7 @@
 		9D1E153D2A6470D600AE25C7 /* NetworkBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E153C2A6470D600AE25C7 /* NetworkBuilder.swift */; };
 		9D1E153F2A64711C00AE25C7 /* RemoteImageUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E153E2A64711C00AE25C7 /* RemoteImageUrl.swift */; };
 		9D1E15412A64873100AE25C7 /* ProductDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15402A64873100AE25C7 /* ProductDetails.swift */; };
+		9D1E15472A65641C00AE25C7 /* SlantedLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1E15462A65641C00AE25C7 /* SlantedLine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		9D1E153C2A6470D600AE25C7 /* NetworkBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBuilder.swift; sourceTree = "<group>"; };
 		9D1E153E2A64711C00AE25C7 /* RemoteImageUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImageUrl.swift; sourceTree = "<group>"; };
 		9D1E15402A64873100AE25C7 /* ProductDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetails.swift; sourceTree = "<group>"; };
+		9D1E15462A65641C00AE25C7 /* SlantedLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlantedLine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				9D1E153E2A64711C00AE25C7 /* RemoteImageUrl.swift */,
+				9D1E15462A65641C00AE25C7 /* SlantedLine.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				9D1E15392A64709B00AE25C7 /* NetworkManager.swift in Sources */,
 				9D1E15332A646FC100AE25C7 /* ProductRow.swift in Sources */,
 				9D1E15192A646D7600AE25C7 /* ProductsAppApp.swift in Sources */,
+				9D1E15472A65641C00AE25C7 /* SlantedLine.swift in Sources */,
 				9D1E152F2A646F6B00AE25C7 /* ProductsVC.swift in Sources */,
 				9D1E153F2A64711C00AE25C7 /* RemoteImageUrl.swift in Sources */,
 				9D1E153D2A6470D600AE25C7 /* NetworkBuilder.swift in Sources */,

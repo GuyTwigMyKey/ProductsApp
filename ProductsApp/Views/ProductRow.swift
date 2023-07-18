@@ -24,8 +24,8 @@ struct ProductRow: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(12)
+                    .shadow(radius: 5, x: 5, y: 5)
                     .padding(.bottom, 10)
-                    .shadow(radius: 5, x: 2, y: 2)
             }
             HStack {
                 HStack {
