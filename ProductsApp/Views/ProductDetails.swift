@@ -28,10 +28,16 @@ struct ProductDetails: View {
                 .multilineTextAlignment(.center)
                 .shadow(color: .black, radius: 0.1, x: 2 ,y: 2)
                 .padding(.bottom, 5)
-            if let image = UIImage(data: remoteImageUrl.data) {
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+            if remoteImageUrl.isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+            } else {
+                if let image = UIImage(data: remoteImageUrl.data) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
             }
             VStack {
                 HStack {

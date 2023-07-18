@@ -19,13 +19,19 @@ struct ProductRow: View {
     
     var body: some View {
         VStack {
-            if let image = UIImage(data: remoteImageUrl.data) {
-                Image(uiImage: image)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .cornerRadius(12)
-                    .shadow(radius: 5, x: 5, y: 5)
-                    .padding(.bottom, 10)
+            if remoteImageUrl.isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .padding()
+            } else {
+                if let image = UIImage(data: remoteImageUrl.data) {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(12)
+                        .padding(.bottom, 10)
+                        .shadow(radius: 5, x: 3, y: 5)
+                }
             }
             HStack {
                 HStack {
