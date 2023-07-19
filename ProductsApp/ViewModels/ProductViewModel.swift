@@ -18,10 +18,9 @@ class ProductViewModel: ObservableObject {
     }
     
     func fetchProducts() {
-        products.removeAll()
         if let url = URL(string: NetworkBuilder.ApiUrls.productsApiUrl.description) {
             let urlRequest = URLRequest(url: url)
-            NetworkManager.shared.genericCombineGetCall(url: urlRequest, type: Products.self)
+            NetworkManager.shared.genericFutureCombineGetCall(url: urlRequest, type: Products.self)
                 .sink {completion in
                     if case .failure(let error) = completion {
                         print(NetworkManagerErrorsHandler.requestError(.other(error)))
