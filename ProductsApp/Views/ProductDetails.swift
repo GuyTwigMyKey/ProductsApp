@@ -11,6 +11,7 @@ struct ProductDetails: View {
     
     var product: SingleProduct
     @State private var isHearted = false
+    @State private var isBouncing = false
     @ObservedObject var remoteImageUrl: RemotelmageUrl
     
     init(product: SingleProduct) {
@@ -23,10 +24,10 @@ struct ProductDetails: View {
             Text(product.title)
                 .font(.system(size: 55))
                 .fontWeight(.heavy)
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
                 .font(.largeTitle.bold())
                 .multilineTextAlignment(.center)
-                .shadow(color: .black, radius: 0.1, x: 2 ,y: 2)
+                .shadow(color: .gray, radius: 0.1, x: 2 ,y: 2)
                 .padding(.bottom, 5)
             if remoteImageUrl.isLoading {
                 ProgressView()
@@ -37,15 +38,17 @@ struct ProductDetails: View {
                     Image(uiImage: image)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .scaleEffect(isBouncing ? 1.4 : 1.0)
+                        .offset(x: isBouncing ? -30 : 0, y: isBouncing ? -30 : 0)
                 }
             }
             VStack {
                 HStack {
                     Text("Product Description: ")
-                        .font(.system(size: 28)) // Set a different font size for the first text
+                        .font(.system(size: 25))
                     +
                     Text(String(product.description))
-                        .font(.system(size: 20)) // Set a different font size for the second text
+                        .font(.system(size: 15))
                 }
                 .lineLimit(nil)
                 .padding(.horizontal)
@@ -58,17 +61,28 @@ struct ProductDetails: View {
                     Spacer()
                     fillTextForFields(title: "Rating: ", titleSize: 20, value: String(product.rating), valuseSize: 15)
                         .overlay(
-                            GeometryReader { geometry in
+                            GeometryReader { geo in
                                 Text("💯")
                                     .font(.system(size: 50))
                                     .opacity(0.2)
                                     .multilineTextAlignment(.center)
                                     .clipped()
-                                    .frame(height: geometry.size.height)
+                                    .frame(height: geo.size.height)
                             })
                     
                     Spacer()
                     Button {
+                        if !isHearted {
+                            withAnimation(.interpolatingSpring(mass: 1, stiffness: 100, damping: 10, initialVelocity: 0)) {
+                                isBouncing = true
+                            }
+                            
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                withAnimation {
+                                    isBouncing = false
+                                }
+                            }
+                        }
                         isHearted.toggle()
                     } label: {
                         if isHearted {
@@ -76,7 +90,10 @@ struct ProductDetails: View {
                                 .resizable()
                                 .frame(width: 50, height: 50)
                                 .scaledToFill()
-                                .tint(.red)
+                                .tint(.purple)
+                                .scaleEffect(isBouncing ? 1.2 : 1.0)
+                                .offset(y: isBouncing ? -20 : 0)
+                                .rotationEffect(isBouncing ? .degrees(360) : .degrees(720))
                         } else {
                             Image(systemName: "heart")
                                 .resizable()
@@ -84,7 +101,6 @@ struct ProductDetails: View {
                                 .scaledToFill()
                                 .tint(.black)
                         }
-                        
                     }
                     Spacer()
                 }
@@ -101,11 +117,11 @@ struct ProductDetails: View {
                 }
                 .padding()
                 .overlay(
-                    GeometryReader { geometry in
+                    GeometryReader { geo in
                         Image("sale")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(height: geometry.size.height)
+                            .frame(height: geo.size.height)
                             .clipped()
                             .opacity(0.1)
                     })

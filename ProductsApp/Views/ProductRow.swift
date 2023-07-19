@@ -10,7 +10,7 @@ import SwiftUI
 struct ProductRow: View {
     
     var product: SingleProduct
-    @ObservedObject var remoteImageUrl: RemotelmageUrl
+    @ObservedObject private var remoteImageUrl: RemotelmageUrl
     
     init(product: SingleProduct) {
         self.product = product

@@ -36,13 +36,13 @@ class NetworkManager {
                 guard let response = res.response as? HTTPURLResponse, response.statusCode >= 200 && response.statusCode <= 300 else {
                     throw NetworkManagerErrorsHandler.serverError(.invalidStatusCode("Invalid status code"))
                 }
-
+                
                 let decoder = JSONDecoder()
                 guard let finalData = try? decoder.decode(T.self, from: res.data) else {
                     throw NetworkManagerErrorsHandler.requestError(.decodingError("Fail to decode"))
                 }
                 
-                  return finalData
+                return finalData
             }
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
